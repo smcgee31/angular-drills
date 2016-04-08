@@ -1,7 +1,42 @@
+<!DOCTYPE html>
+
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<head>
+		<title>Pokemon Chooser</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+		<link href='https://fonts.googleapis.com/css?family=Exo:400,600,500' rel='stylesheet' type='text/css'>
+
+	</head>
+
+	<body ng-controller="mainCtrl">
+		<main>
+			<div class="topper"></div>
+			<header>
+				<h1>Choose your Pok&eacute;mon!</h1>
+				<form ng-submit="getPokemon()">
+					<input type="text" placeholder="Enter a Pok&eacute;mon number" ng-model="choose">
+				</form>
+			</header>
+			<div class="name" ng-model="pokemon">
+				<span>{{pokemon.name}}</span>
+			</div>
+			<div class="abilities" ng-model="pokemon">
+				<p>{{pokemon.abilities[0].ability.name}}</p>
+				<p>{{pokemon.abilities[1].ability.name}}</p>
+				<p>{{pokemon.abilities[2].ability.name}}</p>
+			</div>
+			<div class="img">
+				<img src="{{pokemon.sprites.front_default}}" alt="Your Pokemon" />
+			</div>
+
+
+		</main>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

@@ -1,6 +1,29 @@
-<html>
-	<body>
-	
+<!DOCTYPE HTML>
+<html ng-app="app">
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    </head>
+	<body ng-controller="mainCtrl">
+		<header>
+			<h1>The Aspen Apartments</h1>
+			<h3>5116 Aspen Blvd., Provo, UT | 801.224.6511</h3><hr /><hr />
+		</header>
+		<div ng-repeat="renter in renters">
+			<div>
+				<h3>Unit: {{renter.unit}}</h3>
+				<p>Renter Name: {{renter.lastName}}, {{renter.firstName}}</p>
+				<p>Phone Number: {{renter.phone}}</p>
+				<hr />
+			</div>
+
+		</div>
+
+
+
+
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

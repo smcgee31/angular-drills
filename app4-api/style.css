@@ -1,0 +1,76 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;outline:0;font:inherit;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* box-sizing to most items */
+body,header,main,footer,div,article,aside,details,figcaption,figure,hgroup,menu,nav,input,textarea,select,a,p,ul,ol,li,span{box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/* end reset */
+html {
+    background: url('img/Red_White_bkgd.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+body {
+    font-family: 'Exo', Arial, sans-serif;
+    font-weight: 400;
+    padding: 5vh 5vw;
+    text-align: center;
+
+}
+.topper {
+    width: 100%;
+    height: 15vh;
+    background: url('img/PokeLogo.png') white no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+header {
+    width: 100%;
+    height: 24vh;
+    background-color: white;
+    padding: 2vh 2vw;
+    margin: -1px auto;
+}
+h1 {
+    font-size: 1.35em;
+    margin: 1em;
+}
+input {
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+main {
+    width: 90vw;
+    height: 90vh;
+    border: 8px solid #ED1C24;
+}
+.name {
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    text-transform: capitalize;
+    /*border: 1px solid black;*/
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-top: 0.45em;
+}
+.abilities {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    /*border: 1px solid black;*/
+}
+.img {
+    width: 100%;
+    height: 32vh;
+    background-color: white;
+    /*border: 1px solid black;*/
+1 }
