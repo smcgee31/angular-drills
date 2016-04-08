@@ -29,7 +29,7 @@
 			<section>
 				<div class="personData" ng-repeat="employee in employees | filter: empName | orderBy: 'name'">
 					<ul>
-						<li class="row">Name: {{employee.name}}</li>
+						<li class="row"><strong>Name: {{employee.name}}</strong></li>
 						<li>Email: {{employee.email}}</li>
 						<li class="row">Hire Date: {{employee.dateEmployed}}</li>
 						<li>Phone: {{employee.phone}}</li>
