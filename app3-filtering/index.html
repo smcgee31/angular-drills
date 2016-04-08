@@ -1,6 +1,30 @@
-<html>
-	<body>
-		Something
+<!DOCTYPE html>
+
+<html ng-app='app'>
+	<body ng-controller='mainCtrl'>
+
+		<main>
+			<header>
+				<h1>SuperAwesomeCompany</h1>
+				<span>Employee List</span>
+			</header>
+		</main>
+		<hr />
+			<input type="text" placeholder="sort field" ng-model="filter">
+		<hr />
+		<div ng-repeat="person in employees | filter: filter">
+			<strong>{{person.name}}</strong>
+			<ul>
+				<li>{{person.phone}}</li>
+				<li>{{person.email}}</li>
+				<li>{{person.dateEmployed}}</li>
+			</ul>
+
+		</div>
+
+
+
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

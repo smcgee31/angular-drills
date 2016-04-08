@@ -3,9 +3,9 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-		{{test}}
+		
 
-		<div class='personData' ng-repeat="person in people">
+		<div ng-repeat="person in people">
 			<strong>{{person.name}}</strong>
 			<p>
 				{{person.email}} | {{person.dateHired}} | {{person.phone}}
