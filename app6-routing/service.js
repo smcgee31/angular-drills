@@ -8,8 +8,8 @@ angular.module('appRouting')
             url: 'http://swapi.co/api/starships/'
         })
         .then(function(response) {
-            console.log(response.results);
-            return response.results;
+            console.log(response.data);
+            return response.data;
         });
     };
 

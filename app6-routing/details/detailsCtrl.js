@@ -2,10 +2,10 @@ angular.module('appRouting')
 .controller('detailsCtrl', function($scope, mainSvc) {
 
     $scope.starships = function() {
-        service.getStarships()
+        mainSvc.getStarships()
         .then(function(response) {
-            console.log(response);
-            $scope.starships = response;
+            console.log(response.data);
+            return response.data;
         });
     };
 

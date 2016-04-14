@@ -8,15 +8,15 @@ angular.module('appRouting', ['ui.router'])
         controller: 'homeCtrl'
     })
     .state('signup', {
-        url: '/',
+        url: '/signup',
         templateUrl: 'signup/signup.html',
         controller: 'signupCtrl'
     })
     .state('details', {
-        url: '/',
+        url: '/details',
         templateUrl: 'details/details.html',
         controller: 'detailsCtrl'
     });
 
-    
+
 });
