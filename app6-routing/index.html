@@ -1,9 +1,41 @@
+<!DOCTYPE html>
 <html>
-	<body>
-		<h1>app6 - routing</h1>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <head>
+        <title>app6 - Routing Drill</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+<!-- correct app name? - better double check! -->
+	<body ng-app='appRouting'>
+
+		<h1 class="titleTopper">app6 - Routing Drill</h1>
+		<div class="navBar">
+			<ul class="navList">
+				<li><a ui-sref="home">Home</a></li>
+				<li><a ui-sref="signup">Signup</a></li>
+				<li><a ui-sref="details">Details</a></li>
+			</ul>
+		</div>
+		<br />
+		<br />
+
+<!-- the Views show here -->
+		<ui-view></ui-view>
+
+
+
+
+
+
+<!-- javascript tags here - do they all match the filenames? are they ALL here? -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="details/detailsCtrl.js"></script>
+		<script src="home/homeCtrl.js"></script>
+		<script src="signup/signupCtrl.js"></script>
 	</body>
 </html>
