@@ -2,13 +2,8 @@
 <p>
     Our details view is shown here and the title at the top never changes
 </p>
-<p>
-    details about something here...
-</p>
-<p>
-    ...and some more details here.
-</p>
-<br />
-<hr />
-
-<img src="http://pixel.nymag.com/imgs/daily/vulture/2013/07/24/24-manofsteel-batman.w529.h352.jpg" alt="Batman vs Superman" />
+<div ng-repeat="ship in starships">
+    {{ship.name}}
+    {{ship.model}}
+    {{ship.crew}}
+</div>
